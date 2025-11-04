@@ -4,9 +4,8 @@ public class Main
 {
 	//Classe principal que chama todas as funções, o coração do nosso código
 	public static void main(String[] args) { 
-		int alturaPalavra = 5; // Declaração da altura e largura das letras, sempre num quadrado
 		String palavra = pedePalavra(); // Realiza a declação da variável palavra que chama a função pedePalavra
-		imprimePalavra(alturaPalavra, palavra); //Chama a função que imprime a palavrona na tela
+		imprimePalavra(palavra); //Chama a função que imprime a palavrona na tela
 		
 	}
 
@@ -17,12 +16,12 @@ public class Main
 		return palavrona;
 	}
 
-	public static void imprimePalavra(int alturaPalavra, String palavra) {
-		for (int linha = 0; linha < alturaPalavra; linha++) {
+	public static void imprimePalavra(String palavra) {
+		for (int linha = 0; linha < 5; linha++) {
 			for (int i = 0; i < palavra.length(); i++) {
 				char letra = palavra.charAt(i);
 				char [][] matrizLetra = montaLetra(letra);
-				for (int coluna = 0; coluna < alturaPalavra; coluna++) {
+				for (int coluna = 0; coluna < 5; coluna++) {
 					System.out.print(matrizLetra[linha][coluna]);
 				}
 
