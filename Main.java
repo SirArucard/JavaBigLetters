@@ -2,12 +2,11 @@ import java.util.Scanner;
 
 public class Main
 {
-
-	public static void main(String[] args) {
-		int alturaPalavra = 5;
-		
-		String palavra = pedePalavra();
-		imprimePalavra(alturaPalavra, palavra);
+	//Classe principal que chama todas as funções, o coração do nosso código
+	public static void main(String[] args) { 
+		int alturaPalavra = 5; // Declaração da altura e largura das letras, sempre num quadrado
+		String palavra = pedePalavra(); // Realiza a declação da variável palavra que chama a função pedePalavra
+		imprimePalavra(alturaPalavra, palavra); //Chama a função que imprime a palavrona na tela
 		
 	}
 
