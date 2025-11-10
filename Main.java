@@ -8,14 +8,15 @@ public class Main
 		imprimePalavra(palavra); //Chama a função que imprime a palavrona na tela
 		
 	}
-
+	//Função que pede a palavra a usuário
 	public static String pedePalavra() {
 		Scanner text = new Scanner(System.in);
 		System.out.println("Digite a palavra que vai virar palavrona: ");
 		String palavrona = text.nextLine().toUpperCase();
 		return palavrona;
 	}
-
+	//Função que imprime a palavra escolhida pelo usuário 
+	//Realiza a transformação da string em char e os chars em letras grandes
 	public static void imprimePalavra(String palavra) {
 		for (int linha = 0; linha < 5; linha++) {
 			for (int i = 0; i < palavra.length(); i++) {
@@ -31,7 +32,8 @@ public class Main
 		}
 
 	}
-
+	//Função que tem toda a biblioteca de letrinhas pra transformar
+	//Realiza a comparação do char da string do usuário para realizar a troca
 	public static char[][] montaLetra(char letra)
 	{
 		if (letra == 'A') {
